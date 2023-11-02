@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подбор программы Кет енерджи</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/icons/logo-desktop.svg" width="174" height="51" alt="Логотип сайта Кет енерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </header>
+
+  <main class="page__filters">
+    <section class="filter">
+      <div class="filter__wrapper">
+        <h1 class="filter__title">Подбор программы</h1>
+        <p class="filter__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="filter__form login" action="" method="post">
+          <p>
+            <label for="login-login">Имя:*</label>
+            <input class="login__user" type="text" name="name" id="login-login" placeholder="Барсик">
+          </p>
+          <p>
+            <label for="login-weight">Вес (кг):*</label>
+            <input class="login__user" type="number" name="weight" id="login-weight" placeholder="7">
+          </p>
+          <p>
+            <label for="login-age">Возраст (лет):</label>
+            <input class="login__user" type="number" name="age" id="login-age" placeholder="7">
+          </p>
+        </form>
+
+        <fieldset>
+          <ul>
+            <li class="filter__option filter__radio filter__radio--checked">
+              <input type="radio" name="filter-radio" id="radio-weight-loss" checked>
+              <label for="radio-weight-loss">Похудение</label>
+            </li>
+            <li class="filter__option filter__radio">
+              <input type="radio" name="filter-radio" id="radio-weight-gain">
+              <label for="radio-weight-gain">Набор массы</label>
+            </li>
+            <li class="filter__option filter__radio">
+              <input type="radio" name="filter-radio" id="radio-advice">
+              <label for="radio-advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <form class="contact-owner__form">
+          <h2 class="contact-owner__title">Контактные данные (владельца кота)</h2>
+          <p>
+            <label for="login-email">E-mail:*</label>
+            <input class="contact-owner__email" type="email" name="email" id="login-email" placeholder="kuklachev@gmail.com">
+          </p>
+          <p>
+            <label for="login-phone">Телефон:*</label>
+            <input class="contact-owner__email" type="phone" name="phone" id="login-phone" placeholder="kuklachev@gmail.com">
+          </p>
+        </form>
+
+        <div class="comment">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повaдках кота"></textarea>
+        </div>
+
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <ul>
+            <li>
+              <input class="filter__option filter__checkbox" type="checkbox" name="sweetener" id="checkbox-sweetener" checked>
+              <label for="checkbox-sweetener">Сахарозаменитель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="water" id="checkbox-water">
+              <label for="checkbox-water">Питьевая вода</label>
+            </li>
+            <li>
+              <input type="checkbox" name="milk" id="checkbox-milk">
+              <label for="checkbox-milk">Молоко</label>
+            </li>
+            <li>
+              <input type="checkbox" name="vitamins" id="checkbox-vitamins">
+              <label for="checkbox-vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button>Oтправить заявку</button>
+        <p class="legend">
+          <small>
+            * — Обязательные поля
+          </small>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="img/icons/footer-logo.svg" width="128" height="24" alt="Логотип сайта Кет енрджи">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href=""><span>Вконтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href=""><span>Instagram</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href=""><span>Facebook</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="">HTML Academy</a>
+        <a class="copyright__logo" href="">
+          <img src="img/icons/htmlacademy.svg" width="27" height="34" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
