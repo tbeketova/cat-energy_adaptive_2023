@@ -1,17 +1,18 @@
 @import 'normalize';
+@import 'adaptive-learning';
 
 @font-face {
   font-family: "Oswald";
-  src: url(/source/fonts/oswaldregular.woff2);
-  src: url(/source/fonts/oswaldregular.woff);
+  src: url(../fonts/oswaldregular.woff2);
+  src: url(../fonts/oswaldregular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url(/source/fonts/oswaldmedium.woff2);
-  src: url(/source/fonts/oswaldmedium.woff);
+  src: url(../fonts/oswaldmedium.woff2);
+  src: url(../fonts/oswaldmedium.woff);
   font-weight: 500;
   font-style: normal;
 }
@@ -31,11 +32,10 @@
   font-weight: 400;
   line-height: 18px;
   font-style: normal;
-  background-color: #c53939;
+  
   min-height: 100%;
   /*Прилипший футер*/
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
-
 
