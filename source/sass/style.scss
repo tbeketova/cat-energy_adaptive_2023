@@ -26,16 +26,16 @@
   margin: 0;
   padding: 0;
   min-width: 1440px;
-  font-family: Arial, sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   font-style: normal;
-  /*color: var(--basic-black);
-  background-color: var(--basic-white);*/
-
+  background-color: #c53939;
   min-height: 100%;
   /*Прилипший футер*/
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
+
+
