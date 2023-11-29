@@ -1,0 +1,18 @@
+.main-nav {
+  outline: 2px solid rgb(19, 120, 19);
+  outline-offset: -2px;
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
+}
+
+.site-list {
+  list-style: none;
+}

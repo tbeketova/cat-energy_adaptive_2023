@@ -7,10 +7,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -45,12 +43,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -58,10 +53,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -78,13 +71,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -102,10 +92,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -155,14 +143,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -170,8 +154,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -180,8 +163,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -230,18 +212,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -264,10 +240,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -283,10 +257,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -301,10 +273,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -341,35 +311,19 @@ template {
 
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff");
-  font-style: normal;
+  src: url(../fonts/oswaldregular.woff2);
+  src: url(../fonts/oswaldregular.woff);
   font-weight: 400;
+  font-style: normal;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswaldmedium.woff") format("woff");
-  font-style: normal;
+  src: url(../fonts/oswaldmedium.woff2);
+  src: url(../fonts/oswaldmedium.woff);
   font-weight: 500;
+  font-style: normal;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+/*Global*/
 .page {
   height: 100%;
 }
@@ -377,7 +331,7 @@ img {
 .page__body {
   margin: 0;
   padding: 0;
-  min-width: 320px;
+  min-width: 1440px;
   font-family: "Oswald", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -387,92 +341,4 @@ img {
   /*Прилипший футер*/
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-}
-
-.page-header {
-  display: flex;
-  justify-content: space-between;
-}
-.page-header__logo {
-  height: 65px;
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-.page-header a {
-  text-decoration: none;
-}
-
-.header-logo {
-  display: flex;
-}
-.header-logo__img {
-  width: 33px;
-  height: 37px;
-}
-.header-logo__text {
-  text-transform: uppercase;
-  text-decoration: none;
-}
-@media (min-width: 768px) {
-  .header-logo {
-    height: 76px;
-  }
-}
-@media (min-width: 1024px) {
-  .header-logo {
-    height: 112px;
-  }
-}
-
-.main-nav {
-  outline: 2px solid #137813;
-  outline-offset: -2px;
-}
-
-@media (min-width: 768px) {
-  .main-nav__wrapper {
-    width: 440px;
-  }
-}
-@media (min-width: 1024px) {
-  .main-nav__wrapper {
-    width: 478px;
-  }
-}
-
-.site-list {
-  list-style: none;
-}
-
-.slider__wrapper {
-  color: #ffffff;
-}
-
-.slider__header {
-  background-color: green;
-  height: 455px;
-  margin-bottom: 138px;
-}
-.slider__header__title {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-}
-
-.slider__img {
-  width: 280px;
-  height: 270px;
-}
-@media (min-width: 768px) {
-  .slider__img {
-    width: 709px;
-    height: 609px;
-  }
-}
-@media (min-width: 1024px) {
-  .slider__img {
-    width: 552px;
-    height: 499px;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
