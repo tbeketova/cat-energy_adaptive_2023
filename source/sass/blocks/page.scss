@@ -2,18 +2,27 @@
   height: 100%;
 }
 
-.page__body {
-  margin: 0;
-  padding: 0;
+.page-body {
   min-width: 320px;
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 400;
-  line-height: 18px;
-  font-style: normal;
-  
+  line-height: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
   min-height: 100%;
-  /*Прилипший футер*/
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0;
+  background-color: #F2F2F2;
+}
+
+.page-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.20);
+  }
 }

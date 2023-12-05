@@ -15,7 +15,7 @@ charset = utf-8
 end_of_line = lf #окончание строк
 indent_size = 2   #пробельi
 indent_style = space
-insert_final_newline = true  #финальная строчка
+insert_final_newline = true    #финальная строчка
 trim_trailing_whitespace = true  #редактор подрезает концевьiе пробельi
 
 [*.md]

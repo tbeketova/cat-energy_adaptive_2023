@@ -3,137 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Подбор программы Кет енерджи</title>
+  <title>Форма отправки</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body class="page-body">  
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/icons/logo-desktop.svg" width="174" height="51" alt="Логотип сайта Кет енерджи">
+    <a href="index.html" class="page-header__logo">
+      <img src="img/icons/logo-desktop.svg" alt="Логотип города Седона" width="187" height="97" >
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden"> Окрить меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a>Главная</a>
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="">Каталог продукции</a>
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Форма отзива</a>
           </li>
           <li class="site-list__item">
-            <a href="">Подбор программы</a>
+            <a href="#">Html Academy</a>
           </li>
         </ul>
       </div>
     </nav>
-    <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </header>
 
-  <main class="page__filters">
-    <section class="filter">
-      <div class="filter__wrapper">
-        <h1 class="filter__title">Подбор программы</h1>
-        <p class="filter__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="filter__form login" action="" method="post">
-          <p>
-            <label for="login-login">Имя:*</label>
-            <input class="login__user" type="text" name="name" id="login-login" placeholder="Барсик">
-          </p>
-          <p>
-            <label for="login-weight">Вес (кг):*</label>
-            <input class="login__user" type="number" name="weight" id="login-weight" placeholder="7">
-          </p>
-          <p>
-            <label for="login-age">Возраст (лет):</label>
-            <input class="login__user" type="number" name="age" id="login-age" placeholder="7">
-          </p>
-        </form>
+  <main class="page-main">
+    <h1 class="visually-hidden">Форма обратной связи</h1>
+    <div class="page-main__description description">
+      <h2 class="description__title">Оставьте свой отзыв</h2>
+      <p class="description__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
 
-        <fieldset>
-          <ul>
-            <li class="filter__option filter__radio filter__radio--checked">
-              <input type="radio" name="filter-radio" id="radio-weight-loss" checked>
-              <label for="radio-weight-loss">Похудение</label>
+    <section class="review">    
+      <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
+
+        <fieldset class="review-form__field login-form">
+          <legend class="review-form__legend">Представьтесь:</legend>
+          <ul class="login-form__list">
+            <li class="login-form__item">
+              <label class="login-form__label" for="login-name">Имя*:</label>
+              <input class="login-form__input" id="login-name" type="text" name="name" placeholder="Петр">
             </li>
-            <li class="filter__option filter__radio">
-              <input type="radio" name="filter-radio" id="radio-weight-gain">
-              <label for="radio-weight-gain">Набор массы</label>
+            <li class="login-form__item">
+              <label class="login-form__label" for="login-surname">Фамилия*:</label>
+              <input class="login-form__input" id="login-surname" type="text" name="surname" placeholder="Иванов">
             </li>
-            <li class="filter__option filter__radio">
-              <input type="radio" name="filter-radio" id="radio-advice">
-              <label for="radio-advice">Не знаю (Нужен ваш совет)</label>
+            <li class="login-form__item">
+              <label class="login-form__label" for="login-patronymic">Отчество:</label>
+              <input class="login-form__input" id="login-patronymic" type="text" name="patronymic" placeholder="Александрович">
+            </li>
+          </ul>  
+        </fieldset>
+
+        <fieldset class="review-form__field contacts-form">
+          <legend class="review-form__legend">Контактная информация:</legend>
+          <ul class="contacts-form__list">
+            <li class="contacts-form__item">
+              <label class="contacts-form__label" for="contacts-phone">Контактный телефон*:</label>
+              <input class="contacts-form__input" id="contacts-phone" name="phone" type="tel" placeholder="Введите телефон">
+            </li>
+            <li class="contacts-form__item">
+              <label class="contacts-form__label" for="contacts-email">Электронная почта*:</label>
+              <input class="contacts-form__input" id="contacts-email" name="email" type="email" placeholder="Введите e-mail">
+            </li>
+          </ul>  
+        </fieldset>
+
+        <fieldset class="review-form__field filter-radio">
+          <legend class="review-form__legend">Вaше Общее впечатление:</legend>
+          <ul class="filter-radio__list">
+            <li class="filter-radio__item radio">
+              <input class="radio__input" id="filter-positive" name="impression" type="radio" value="positive-impression" checked>
+              <label class="radio__label" for="filter-positive">Скорее положительное</label>
+            </li>
+            <li class="filter-radio__item radio">
+              <input class="radio__input" id="filter-negative" name="impression" type="radio" value="negative-impression">
+              <label class="radio__label" for="filter-negative">Скорее отрицательное</label>
+            </li>
+            <li class="filter-radio__item radio">
+              <input class="radio__input" id="filter-difficult" name="impression" type="radio" value="difficult-impression">
+              <label class="radio__label" for="filter-difficult">Скорее отрицательное</label>
             </li>
           </ul>
         </fieldset>
 
-        <form class="contact-owner__form">
-          <h2 class="contact-owner__title">Контактные данные (владельца кота)</h2>
-          <p>
-            <label for="login-email">E-mail:*</label>
-            <input class="contact-owner__email" type="email" name="email" id="login-email" placeholder="kuklachev@gmail.com">
-          </p>
-          <p>
-            <label for="login-phone">Телефон:*</label>
-            <input class="contact-owner__email" type="phone" name="phone" id="login-phone" placeholder="kuklachev@gmail.com">
-          </p>
-        </form>
+        <fieldset class="review-form__field filter-checkbox">
+          <legend class="review-form__legend">Посещенные достопримечательности:</legend>
+          <ul class="filter-checkbox__list">
+            <li class="filter-checkbox__item checkbox">
+              <input class="checkbox__input" id="filter-bridge" name="bridge" type="checkbox" checked>
+              <label class="checkbox__label" for="filter-bridge">Мост Дьявола</label>
+            </li>
+            <li class="filter-checkbox__item checkbox">
+              <input class="checkbox__input" id="filter-mountain" name="mountain" type="checkbox" checked>
+              <label class="checkbox__label" for="filter-mountain">Гора-Колокол</label>
+            </li>
+            <li class="filter-checkbox__item checkbox">
+              <input class="checkbox__input" id="filter-park" name="park" type="checkbox" checked>
+              <label class="checkbox__label" for="filter-park">Слайд-парк</label>
+            </li>
+            <li class="filter-checkbox__item checkbox">
+              <input class="checkbox__input" id="filter-rocks" name="rocks" type="checkbox">
+              <label class="checkbox__label" for="filter-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
 
-        <div class="comment">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повaдках кота"></textarea>
+        <div class="review-form__field feedback-form">
+          <label class="feedback-form__label">Опишите свои эмоции:</label>
+          <textarea class="feedback-form__textarea" name="feedback" id="feedback-form" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
         </div>
-
-        <fieldset>
-          <legend>Дополнительно</legend>
-          <ul>
-            <li>
-              <input class="filter__option filter__checkbox" type="checkbox" name="sweetener" id="checkbox-sweetener" checked>
-              <label for="checkbox-sweetener">Сахарозаменитель</label>
-            </li>
-            <li>
-              <input type="checkbox" name="water" id="checkbox-water">
-              <label for="checkbox-water">Питьевая вода</label>
-            </li>
-            <li>
-              <input type="checkbox" name="milk" id="checkbox-milk">
-              <label for="checkbox-milk">Молоко</label>
-            </li>
-            <li>
-              <input type="checkbox" name="vitamins" id="checkbox-vitamins">
-              <label for="checkbox-vitamins">Витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button>Oтправить заявку</button>
-        <p class="legend">
-          <small>
-            * — Обязательные поля
-          </small>
-        </p>
-      </div>
+        <button class="button-form button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      </form>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="img/icons/footer-logo.svg" width="128" height="24" alt="Логотип сайта Кет енрджи">
+      <p>#visitSEDONA</p>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href=""><span>Вконтакте</span></a>
+            <a class="social__link social__link--twitter" href="">
+              <span class="visually-hidden">Twitter</span>
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href=""><span>Instagram</span></a>
+          <li>
+            <a class="social__link social__link--facebook" href="">
+              <span>Facebook</span>
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href=""><span>Facebook</span></a>
+          <li>
+            <a class="social__link social__link--youtube" href="">
+              <span>Youtube</span>
+            </a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="">HTML Academy</a>
-        <a class="copyright__logo" href="">
-          <img src="img/icons/htmlacademy.svg" width="27" height="34" alt="">
-        </a>
+      <div class="page-footer__copyright">
+        <p>Разработано</p>
+        <img src="img/htmlacademy.svg" alt="Логотип">
       </div>
     </div>
   </footer>

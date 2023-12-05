@@ -1,0 +1,28 @@
+.page-footer {
+  &__hashtag {
+    margin: 0;
+  }
+}
+
+.social {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.copyright {
+  &__title {
+    margin: 0;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .page-footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;
+    justify-items: center;
+}
+}
